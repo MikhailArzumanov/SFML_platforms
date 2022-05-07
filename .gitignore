@@ -1,5 +1,6 @@
-/.vs
+.vs/
 *.*obj
 *.*log
 *.pdb
 /x64
+Thumbs.db
