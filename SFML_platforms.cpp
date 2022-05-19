@@ -3,19 +3,29 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
 #include "window.hpp"
-#include "ExamplePlatform.hpp"
+#include "thePlatform.hpp"
 
 sf::RenderWindow* window;
+ExamplePlatform* platform = nullptr;
 
 
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
 sf::RectangleShape exampleRectangle = sf::RectangleShape(examplePlatformDims);
 
 
-ExamplePlatform platform;
 
+void handleEvents();
 
 int tickCounter = 0;
+void tick();
+void checkTick();
+
+void draw();
+
+void iterate();
+void cycle();
+
+void init();
 
 void handleEvents() {
 	sf::Event theEvent;
@@ -27,10 +37,13 @@ void handleEvents() {
 	}
 }
 
+int tickCounter = 0;
+
 void tick() {
-	platform.tick();
+	platform->tick();
 	tickCounter = 0;
 }
+
 void checkTick() {
 	if (tickCounter++ > 1000)
 		tick();
@@ -38,7 +51,7 @@ void checkTick() {
 
 void draw() {
 	window->clear();
-	platform.draw();
+	platform->draw();
 	window->display();
 }
 
@@ -53,9 +66,13 @@ void cycle() {
 		iterate();
 }
 
-int main(){
+void init() {
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
 	exampleRectangle.setFillColor(examplePlatformColor);
-	platform = ExamplePlatform(exampleRectangle, { 0, 0 });
+	platform = new ExamplePlatform(exampleRectangle, { 0, 0 });
+}
+
+int main(){
+	init();
 	cycle();
 }
