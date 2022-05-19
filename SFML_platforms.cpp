@@ -61,6 +61,11 @@ public:
 		point lu_corner = p - dims / 2;
 		lu_corner >> exampleRectangle;
 	}
+	void tick() {
+		p.x++;
+		p.y++;
+	}
+	bool is_living() { return true; }
 };
 
 int main(){
