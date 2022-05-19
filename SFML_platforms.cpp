@@ -33,6 +33,11 @@ protected:
 	virtual bool is_living() = 0;
 };
 
+class Entity : Drawable, Living, Ticking {
+protected:
+	point p, dims;
+};
+
 int main(){
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
 	while (window->isOpen()) {
