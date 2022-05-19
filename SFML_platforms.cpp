@@ -18,6 +18,21 @@ struct point {
 	}
 };
 
+class Drawable {
+protected:
+	virtual void draw() = 0;
+};
+
+class Ticking {
+protected:
+	virtual void tick() = 0;
+};
+
+class Living {
+protected:
+	virtual bool is_living() = 0;
+};
+
 int main(){
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
 	while (window->isOpen()) {
