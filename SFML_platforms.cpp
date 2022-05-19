@@ -18,6 +18,9 @@ struct point {
 	}
 };
 
+const point examplePlatformDims = { 120, 12 };
+const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
+
 class Drawable {
 protected:
 	virtual void draw() = 0;
@@ -44,6 +47,7 @@ protected:
 		p = position; dims = dims_;
 	}
 };
+
 
 
 int main(){
