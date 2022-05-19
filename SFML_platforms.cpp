@@ -38,6 +38,14 @@ protected:
 	point p, dims;
 };
 
+class Platform : public Entity {
+protected:
+	Platform(point position, point dims_) {
+		p = position; dims = dims_;
+	}
+};
+
+
 int main(){
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
 	while (window->isOpen()) {
