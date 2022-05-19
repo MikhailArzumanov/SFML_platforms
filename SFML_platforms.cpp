@@ -10,6 +10,10 @@ struct point {
 	operator sf::Vector2f() const {
 		return sf::Vector2f({ x, y });
 	}
+	void operator>>(sf::RectangleShape shape) {
+		shape.setPosition(x, y);
+		window->draw(shape);
+	}
 
 	point operator-(point another) {
 		return { x - another.x, y - another.y };
@@ -53,6 +57,10 @@ protected:
 class ExamplePlatform : public Platform {
 public:
 	ExamplePlatform(point position) : Platform(position, examplePlatformDims) {}
+	void draw() {
+		point lu_corner = p - dims / 2;
+		lu_corner >> exampleRectangle;
+	}
 };
 
 int main(){
