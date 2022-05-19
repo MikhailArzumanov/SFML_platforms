@@ -2,7 +2,9 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
-
+#include "Drawable.hpp"
+#include "Living.hpp"
+#include "Ticking.hpp"
 #include "window.hpp"
 #include "point.hpp"
 
@@ -12,20 +14,8 @@ const point examplePlatformDims = { 120, 12 };
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
 sf::RectangleShape exampleRectangle = sf::RectangleShape(examplePlatformDims);
 
-class Drawable {
-protected:
-	virtual void draw() = 0;
-};
 
-class Ticking {
-protected:
-	virtual void tick() = 0;
-};
 
-class Living {
-protected:
-	virtual bool is_living() = 0;
-};
 
 class Entity : Drawable, Living, Ticking {
 protected:
