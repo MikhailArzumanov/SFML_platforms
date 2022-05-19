@@ -2,27 +2,11 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
+
 #include "window.hpp"
+#include "point.hpp"
 
 sf::RenderWindow* window;
-
-struct point {
-	float x, y;
-	operator sf::Vector2f() const {
-		return sf::Vector2f({ x, y });
-	}
-	void operator>>(sf::RectangleShape shape) {
-		shape.setPosition(x, y);
-		window->draw(shape);
-	}
-
-	point operator-(point another) {
-		return { x - another.x, y - another.y };
-	}
-	point operator/(float scalar) {
-		return { x / scalar, y / scalar };
-	}
-};
 
 const point examplePlatformDims = { 120, 12 };
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
@@ -76,10 +60,13 @@ int tickCounter = 0;
 
 void tick() {
 	platform.tick();
+	tickCounter = 0;
 }
 
 void draw() {
+	window->clear();
 	platform.draw();
+	window->display();
 }
 
 int main(){
@@ -93,10 +80,11 @@ int main(){
 			case sf::Event::Closed:
 				window->close();
 			}
-			if (tickCounter++ > 1000)
-				tick();
-			draw();
 		}
+
+		if (tickCounter++ > 1000)
+			tick();
+		draw();
 
 	}
 }

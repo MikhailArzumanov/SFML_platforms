@@ -13,10 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\environment">
+      <UniqueIdentifier>{b5d31e75-95b4-4f61-b931-b0bcd51601d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\structs">
+      <UniqueIdentifier>{ff024cb5-6b54-4d32-9ae8-a1379ca6da33}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="point.hpp">
+      <Filter>Header Files\environment\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="window.hpp">
+      <Filter>Header Files\environment</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
