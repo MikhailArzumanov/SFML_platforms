@@ -2,29 +2,16 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
-#include "Drawable.hpp"
-#include "Living.hpp"
-#include "Ticking.hpp"
-#include "Entity.hpp"
 #include "window.hpp"
-#include "point.hpp"
+#include "Platform.hpp"
+
 
 sf::RenderWindow* window;
+
 
 const point examplePlatformDims = { 120, 12 };
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
 sf::RectangleShape exampleRectangle = sf::RectangleShape(examplePlatformDims);
-
-
-
-
-
-class Platform : public Entity {
-protected:
-	Platform(point position, point dims_) {
-		p = position; dims = dims_;
-	}
-};
 
 class ExamplePlatform : public Platform {
 public:
