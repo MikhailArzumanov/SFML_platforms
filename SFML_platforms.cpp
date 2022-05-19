@@ -70,8 +70,15 @@ public:
 
 ExamplePlatform platform = ExamplePlatform({ 0, 0 });
 
+
+int tickCounter = 0;
+
 void tick() {
 	platform.tick();
+}
+
+void draw() {
+	platform.draw();
 }
 
 int main(){
@@ -85,7 +92,9 @@ int main(){
 			case sf::Event::Closed:
 				window->close();
 			}
-			tick();
+			if (tickCounter++ > 1000)
+				tick();
+			draw();
 		}
 
 	}
