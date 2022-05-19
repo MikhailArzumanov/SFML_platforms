@@ -1,6 +1,8 @@
 #pragma once
 #include "Platform.hpp"
 
+
+
 extern const point examplePlatformDims;
 
 class ExamplePlatform : public Platform {
