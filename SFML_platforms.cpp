@@ -5,6 +5,7 @@
 #include "Drawable.hpp"
 #include "Living.hpp"
 #include "Ticking.hpp"
+#include "Entity.hpp"
 #include "window.hpp"
 #include "point.hpp"
 
@@ -17,10 +18,6 @@ sf::RectangleShape exampleRectangle = sf::RectangleShape(examplePlatformDims);
 
 
 
-class Entity : Drawable, Living, Ticking {
-protected:
-	point p, dims;
-};
 
 class Platform : public Entity {
 protected:
