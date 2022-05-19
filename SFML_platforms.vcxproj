@@ -143,7 +143,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cycle.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="ExamplePlatform_constructors.cpp" />
+    <ClCompile Include="ExamplePlatform_draw.cpp" />
+    <ClCompile Include="ExamplePlatform_is_living.cpp" />
+    <ClCompile Include="ExamplePlatform_tick.cpp" />
+    <ClCompile Include="handleEvents.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="iterate.cpp" />
     <ClCompile Include="SFML_platforms.cpp" />
+    <ClCompile Include="tick.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Drawable.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="ExamplePlatform.hpp" />
+    <ClInclude Include="Living.hpp" />
+    <ClInclude Include="main_functions.hpp" />
+    <ClInclude Include="Platform.hpp" />
+    <ClInclude Include="point.hpp" />
+    <ClInclude Include="thePlatform.hpp" />
+    <ClInclude Include="Ticking.hpp" />
+    <ClInclude Include="window.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

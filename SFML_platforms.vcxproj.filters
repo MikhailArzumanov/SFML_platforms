@@ -13,10 +13,105 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\environment">
+      <UniqueIdentifier>{b5d31e75-95b4-4f61-b931-b0bcd51601d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\structs">
+      <UniqueIdentifier>{ff024cb5-6b54-4d32-9ae8-a1379ca6da33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\interfaces">
+      <UniqueIdentifier>{63acc79c-2307-48ce-8615-ade7742c5e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\abstract">
+      <UniqueIdentifier>{9f6504a7-be46-4bb3-a6fe-1f74e89782b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\abstract\EntityDerivatives">
+      <UniqueIdentifier>{7ac39def-edfd-48f2-b042-ba3dd4cc1832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platforms">
+      <UniqueIdentifier>{bc984bee-c6c6-4982-804b-093064e8601b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platforms">
+      <UniqueIdentifier>{8542d259-116c-419a-b2a4-456a81240163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platforms\ExamplePlatform">
+      <UniqueIdentifier>{a48a9622-ed49-4912-820f-b5ac67711220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\main_functions">
+      <UniqueIdentifier>{c88dbe19-14e5-48bb-98e0-ff1333b5cb69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\objects">
+      <UniqueIdentifier>{771baa7c-20b7-4492-a61a-e3cc85df7f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main_functions">
+      <UniqueIdentifier>{174ec6ac-a532-4991-b427-129286fc668e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExamplePlatform_constructors.cpp">
+      <Filter>Source Files\platforms\ExamplePlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="ExamplePlatform_draw.cpp">
+      <Filter>Source Files\platforms\ExamplePlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="ExamplePlatform_tick.cpp">
+      <Filter>Source Files\platforms\ExamplePlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="ExamplePlatform_is_living.cpp">
+      <Filter>Source Files\platforms\ExamplePlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="tick.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="handleEvents.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="iterate.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="cycle.cpp">
+      <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="point.hpp">
+      <Filter>Header Files\environment\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.hpp">
+      <Filter>Header Files\environment\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Ticking.hpp">
+      <Filter>Header Files\environment\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Living.hpp">
+      <Filter>Header Files\environment\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files\environment\abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.hpp">
+      <Filter>Header Files\environment\abstract\EntityDerivatives</Filter>
+    </ClInclude>
+    <ClInclude Include="ExamplePlatform.hpp">
+      <Filter>Header Files\platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="window.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="thePlatform.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="main_functions.hpp">
+      <Filter>Header Files\main_functions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
