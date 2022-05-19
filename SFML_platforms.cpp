@@ -68,8 +68,16 @@ public:
 	bool is_living() { return true; }
 };
 
+ExamplePlatform platform = ExamplePlatform({ 0, 0 });
+
+void tick() {
+	platform.tick();
+}
+
 int main(){
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
+	exampleRectangle.setFillColor(examplePlatformColor);
+	
 	while (window->isOpen()) {
 		sf::Event theEvent;
 		while (window->pollEvent(theEvent)) {
@@ -77,6 +85,7 @@ int main(){
 			case sf::Event::Closed:
 				window->close();
 			}
+			tick();
 		}
 
 	}
