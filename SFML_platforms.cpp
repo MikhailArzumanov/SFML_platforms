@@ -50,7 +50,10 @@ protected:
 	}
 };
 
-
+class ExamplePlatform : public Platform {
+public:
+	ExamplePlatform(point position) : Platform(position, examplePlatformDims) {}
+};
 
 int main(){
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
