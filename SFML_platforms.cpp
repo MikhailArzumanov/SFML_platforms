@@ -2,6 +2,7 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
+#include "window.hpp"
 
 sf::RenderWindow* window;
 
