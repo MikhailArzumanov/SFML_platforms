@@ -1,4 +1,5 @@
 #include <iostream>
+#include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
 
@@ -20,6 +21,7 @@ struct point {
 
 const point examplePlatformDims = { 120, 12 };
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
+sf::RectangleShape exampleRectangle = sf::RectangleShape(examplePlatformDims);
 
 class Drawable {
 protected:
