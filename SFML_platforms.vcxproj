@@ -146,12 +146,13 @@
     <ClCompile Include="cycle.cpp" />
     <ClCompile Include="draw.cpp" />
     <ClCompile Include="ExamplePlatform_constructors.cpp" />
-    <ClCompile Include="ExamplePlatform_draw.cpp" />
     <ClCompile Include="ExamplePlatform_is_living.cpp" />
     <ClCompile Include="ExamplePlatform_tick.cpp" />
     <ClCompile Include="handleEvents.cpp" />
     <ClCompile Include="init.cpp" />
     <ClCompile Include="iterate.cpp" />
+    <ClCompile Include="Platform_constructor.cpp" />
+    <ClCompile Include="Platform_draw.cpp" />
     <ClCompile Include="SFML_platforms.cpp" />
     <ClCompile Include="tick.cpp" />
   </ItemGroup>

@@ -11,6 +11,10 @@ struct point {
 		shape.setPosition(x, y);
 		window->draw(shape);
 	}
+	void operator>>(sf::RectangleShape* shape) {
+		shape->setPosition(x, y);
+		window->draw(*shape);
+	}
 
 	point operator-(point another) {
 		return { x - another.x, y - another.y };
