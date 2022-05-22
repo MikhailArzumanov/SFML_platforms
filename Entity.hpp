@@ -6,7 +6,7 @@
 
 
 
-class Entity : Drawable, Living, Ticking {
+class Entity : public Drawable, public Living, public Ticking {
 protected:
 	point p, dims;
 	Entity(point position, point dims_) {
