@@ -3,13 +3,17 @@
 #include "Living.hpp"
 #include "Ticking.hpp"
 #include "point.hpp"
+#include "EntityType.hpp"
 
 
 
 class Entity : public Drawable, public Living, public Ticking {
 protected:
+	EntityType type;
 	point p, dims;
 	Entity(point position, point dims_) {
 		p = position; dims = dims_;
 	}
+public:
+	EntityType getType(){return type;}
 };
