@@ -15,5 +15,7 @@ protected:
 		p = position; dims = dims_;
 	}
 public:
+	point getP(){return p;}
+	point getDims(){return dims;}
 	EntityType getType(){return type;}
 };
