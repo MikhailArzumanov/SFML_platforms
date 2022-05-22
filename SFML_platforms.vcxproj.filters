@@ -52,6 +52,9 @@
     <Filter Include="Source Files\environment\Platform">
       <UniqueIdentifier>{0e90d8b3-ef77-4b78-a307-daa45e4cad7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\environment\objects">
+      <UniqueIdentifier>{b7701c00-e370-47f0-9fb9-7a988dd9fa65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
@@ -90,6 +93,9 @@
     <ClCompile Include="Platform_constructor.cpp">
       <Filter>Source Files\environment\Platform</Filter>
     </ClCompile>
+    <ClCompile Include="platforms.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="point.hpp">
@@ -121,6 +127,9 @@
     </ClInclude>
     <ClInclude Include="main_functions.hpp">
       <Filter>Header Files\main_functions</Filter>
+    </ClInclude>
+    <ClInclude Include="platforms.hpp">
+      <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

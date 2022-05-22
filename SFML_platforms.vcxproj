@@ -151,6 +151,7 @@
     <ClCompile Include="handleEvents.cpp" />
     <ClCompile Include="init.cpp" />
     <ClCompile Include="iterate.cpp" />
+    <ClCompile Include="platforms.cpp" />
     <ClCompile Include="Platform_constructor.cpp" />
     <ClCompile Include="Platform_draw.cpp" />
     <ClCompile Include="SFML_platforms.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Living.hpp" />
     <ClInclude Include="main_functions.hpp" />
     <ClInclude Include="Platform.hpp" />
+    <ClInclude Include="platforms.hpp" />
     <ClInclude Include="point.hpp" />
     <ClInclude Include="thePlatform.hpp" />
     <ClInclude Include="Ticking.hpp" />

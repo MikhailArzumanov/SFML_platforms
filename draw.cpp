@@ -1,10 +1,12 @@
 #include "main_functions.hpp"
 #include "window.hpp"
-#include "thePlatform.hpp"
+#include "platforms.hpp"
 
+#define in :
 
 void draw() {
 	window->clear();
-	platform->draw();
+	for(auto platform in platforms)
+		platform->draw();
 	window->display();
 }

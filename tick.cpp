@@ -1,12 +1,12 @@
 #include "main_functions.hpp"
-#include "thePlatform.hpp"
+#include "platforms.hpp"
 
-
-
+#define in :
 int tickCounter = 0;
 
 void tick() {
-	platform->tick();
+	for(auto platform in platforms)
+		platform->tick();
 	tickCounter = 0;
 }
 
