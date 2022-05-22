@@ -1,7 +1,6 @@
 #include "Being.hpp"
-
+#include "window.hpp"
 
 void Being::draw() {
-	point lu_corner = p - dims/2.f;
-	lu_corner >> image;
+	window->draw(*image);
 }

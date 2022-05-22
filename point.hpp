@@ -7,9 +7,6 @@ struct point {
 	operator sf::Vector2f() const {
 		return sf::Vector2f({ x, y });
 	}
-	void operator>>(sf::Drawable* drawable) {
-		window->draw(*drawable);
-	}
 	void operator>>(sf::RectangleShape* shape) {
 		shape->setPosition(x, y);
 		window->draw(*shape);

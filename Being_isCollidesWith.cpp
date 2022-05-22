@@ -10,7 +10,7 @@ bool Being::isCollidesWith(Entity* another) {
 		point sumDims = another->getDims() + dims;
 		if (dist.x < sumDims.x && dist.y < sumDims.y)
 			return true;
-		break;
 	}
+
 	return false;
 }

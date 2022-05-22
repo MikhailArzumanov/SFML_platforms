@@ -55,6 +55,21 @@
     <Filter Include="Source Files\environment\objects">
       <UniqueIdentifier>{b7701c00-e370-47f0-9fb9-7a988dd9fa65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\beings">
+      <UniqueIdentifier>{984fda1b-54d0-4e47-9359-668c9f71d80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\Being">
+      <UniqueIdentifier>{a6c7af82-1cc3-40e0-b331-4c3fe91891c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\enumerations">
+      <UniqueIdentifier>{c293b5ae-31e2-4edf-8f79-a1652033b4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\beings">
+      <UniqueIdentifier>{a317e186-3ebc-4554-b791-e626d1411e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\beings\ExampleBeing">
+      <UniqueIdentifier>{41f705da-903b-4031-b133-bd8de065a8f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
@@ -96,6 +111,33 @@
     <ClCompile Include="platforms.cpp">
       <Filter>Source Files\environment\objects</Filter>
     </ClCompile>
+    <ClCompile Include="Being_isCollidesWith.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_draw.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_constructor.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_constructor.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_constants.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_tick.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="beings.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_draw.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_collide.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="point.hpp">
@@ -129,6 +171,24 @@
       <Filter>Header Files\main_functions</Filter>
     </ClInclude>
     <ClInclude Include="platforms.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Being.hpp">
+      <Filter>Header Files\environment\abstract\EntityDerivatives</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleBeing.hpp">
+      <Filter>Header Files\beings</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityType.hpp">
+      <Filter>Header Files\environment\enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleBeing_constants.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="theBeing.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="beings.hpp">
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
   </ItemGroup>
