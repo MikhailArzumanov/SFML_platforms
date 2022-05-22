@@ -2,6 +2,6 @@
 
 
 class Drawable {
-protected:
+public:
 	virtual void draw() = 0;
 };
