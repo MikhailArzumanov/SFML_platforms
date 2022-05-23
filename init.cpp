@@ -16,7 +16,7 @@ void init() {
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
 	exampleBeingShape->setFillColor(exampleBeingColor);
 	exampleRectangle->setFillColor(examplePlatformColor);
-	platform = new ExamplePlatform(exampleRectangle, { 0, 0 });
+	platform = new ExamplePlatform(exampleRectangle, { 100.f, 100.f });
 	platforms.push_back(platform);
 	exampleBeing = new ExampleBeing({40.f, 40.f});
 	beings.push_back(exampleBeing);

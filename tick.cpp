@@ -19,7 +19,6 @@ void tick() {
 	}
 }
 
-
 void checkTick() {
 	if (theClock.getElapsedTime().asSeconds() >= 1 / 60.f) {
 		theClock.restart();
