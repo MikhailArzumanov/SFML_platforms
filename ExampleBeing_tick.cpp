@@ -4,7 +4,6 @@
 const float windage = 12.f;
 const float gravityCoefficient = 3.f;
 
-
 void ExampleBeing::tick() {
 	a.y += gravityCoefficient;
 	v += a;
@@ -13,4 +12,5 @@ void ExampleBeing::tick() {
 	std::cout <<"dy = " <<v.y <<"\n";
 	v.y /= windage;
 	//...
+	lastCollidable = nullptr;
 }

@@ -4,6 +4,7 @@ const float d_max = 10.f;
 const point v_max = { 0, -19.f };
 
 void Being::collide(Entity* collidable) {
+	lastCollidable = collidable;
 	switch (collidable->getType()) {
 	case anExampleBeing:
 		//...
