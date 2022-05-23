@@ -11,11 +11,11 @@ void tick() {
 	for (auto being in beings) {
 		being->tick();
 		for (auto platform in platforms)
-			if (being->isCollidesWith(platform))
+			if (being->isCollindingWith(platform))
 				being->collide(platform);
 
 		for (auto another in beings)
-			if (being != another && being->isCollidesWith(another))
+			if (being != another && being->isCollindingWith(another))
 				being->collide(another);
 	}
 	tickCounter = 0;

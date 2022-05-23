@@ -2,7 +2,7 @@
 
 
 
-bool Being::isCollidesWith(Entity* another) {
+bool Being::isCollindingWith(Entity* another) {
 	switch (another->getType()) {
 	case anExampleBeing:
 	case anExamplePlatform:

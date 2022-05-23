@@ -10,7 +10,7 @@
 class Entity : public Drawable, public Living, public Ticking {
 protected:
 	EntityType type;
-	point p, v, dims;
+	point p, v, a, dims;
 	Entity(point position, point dims_) {
 		p = position; dims = dims_;
 	}
