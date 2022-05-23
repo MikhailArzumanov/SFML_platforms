@@ -1,7 +1,7 @@
 #include "Being.hpp"
 
 const float d_max = 10.f;
-const point v_max = { 0, -19.f };
+const point v_max = { 0, -4.f };
 
 void Being::collide(Entity* collidable) {
 	lastCollidable = collidable;
