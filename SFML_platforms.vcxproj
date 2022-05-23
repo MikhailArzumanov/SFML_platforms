@@ -147,7 +147,7 @@
     <ClCompile Include="Being_collide.cpp" />
     <ClCompile Include="Being_constructor.cpp" />
     <ClCompile Include="Being_draw.cpp" />
-    <ClCompile Include="Being_isCollidesWith.cpp" />
+    <ClCompile Include="Being_isCollidingWith.cpp" />
     <ClCompile Include="cycle.cpp" />
     <ClCompile Include="draw.cpp" />
     <ClCompile Include="ExampleBeing_constants.cpp" />
