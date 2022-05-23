@@ -6,7 +6,6 @@
 #define in :
 
 void tick() {
-	theClock.restart();
 	for(auto platform in platforms)
 		platform->tick();
 	for (auto being in beings) {
@@ -22,6 +21,8 @@ void tick() {
 
 
 void checkTick() {
-	if (theClock.getElapsedTime().asSeconds() >= 1/60.f)
+	if (theClock.getElapsedTime().asSeconds() >= 1 / 60.f) {
+		theClock.restart();
 		tick();
+	}
 }

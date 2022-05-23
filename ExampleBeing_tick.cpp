@@ -2,7 +2,7 @@
 #include <iostream>
 
 const float windage = 12.f;
-const float gravityCoefficient = 4.f;
+const float gravityCoefficient = 3.f;
 
 
 void ExampleBeing::tick() {
