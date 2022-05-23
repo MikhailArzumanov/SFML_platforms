@@ -2,6 +2,6 @@
 
 
 class Living {
-protected:
+public:
 	virtual bool is_living() = 0;
 };

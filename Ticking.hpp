@@ -2,6 +2,6 @@
 
 
 class Ticking {
-protected:
+public:
 	virtual void tick() = 0;
 };

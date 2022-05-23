@@ -1,10 +1,16 @@
 #include "main_functions.hpp"
 #include "window.hpp"
-#include "thePlatform.hpp"
+#include "platforms.hpp"
+#include "beings.hpp"
 
+
+#define in :
 
 void draw() {
 	window->clear();
-	platform->draw();
+	for(auto platform in platforms)
+		platform->draw();
+	for (auto being in beings)
+		being->draw();
 	window->display();
 }

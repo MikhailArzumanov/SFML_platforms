@@ -1,12 +1,21 @@
 #pragma once
-
 #include "Drawable.hpp"
 #include "Living.hpp"
 #include "Ticking.hpp"
 #include "point.hpp"
+#include "EntityType.hpp"
 
 
-class Entity : Drawable, Living, Ticking {
+
+class Entity : public Drawable, public Living, public Ticking {
 protected:
-	point p, dims;
+	EntityType type;
+	point p, v, dims;
+	Entity(point position, point dims_) {
+		p = position; dims = dims_;
+	}
+public:
+	point getP(){return p;}
+	point getDims(){return dims;}
+	EntityType getType(){return type;}
 };

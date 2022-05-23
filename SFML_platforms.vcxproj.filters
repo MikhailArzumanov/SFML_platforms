@@ -46,15 +46,36 @@
     <Filter Include="Source Files\main_functions">
       <UniqueIdentifier>{174ec6ac-a532-4991-b427-129286fc668e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\environment">
+      <UniqueIdentifier>{95fc02bf-a007-485c-a4fd-e226c87ecd09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\Platform">
+      <UniqueIdentifier>{0e90d8b3-ef77-4b78-a307-daa45e4cad7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\objects">
+      <UniqueIdentifier>{b7701c00-e370-47f0-9fb9-7a988dd9fa65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\beings">
+      <UniqueIdentifier>{984fda1b-54d0-4e47-9359-668c9f71d80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\Being">
+      <UniqueIdentifier>{a6c7af82-1cc3-40e0-b331-4c3fe91891c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\enumerations">
+      <UniqueIdentifier>{c293b5ae-31e2-4edf-8f79-a1652033b4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\beings">
+      <UniqueIdentifier>{a317e186-3ebc-4554-b791-e626d1411e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\beings\ExampleBeing">
+      <UniqueIdentifier>{41f705da-903b-4031-b133-bd8de065a8f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ExamplePlatform_constructors.cpp">
-      <Filter>Source Files\platforms\ExamplePlatform</Filter>
-    </ClCompile>
-    <ClCompile Include="ExamplePlatform_draw.cpp">
       <Filter>Source Files\platforms\ExamplePlatform</Filter>
     </ClCompile>
     <ClCompile Include="ExamplePlatform_tick.cpp">
@@ -80,6 +101,42 @@
     </ClCompile>
     <ClCompile Include="cycle.cpp">
       <Filter>Source Files\main_functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform_draw.cpp">
+      <Filter>Source Files\environment\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform_constructor.cpp">
+      <Filter>Source Files\environment\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_isCollidesWith.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_draw.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_constructor.cpp">
+      <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_constructor.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_constants.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_tick.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="beings.cpp">
+      <Filter>Source Files\environment\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_draw.cpp">
+      <Filter>Source Files\beings\ExampleBeing</Filter>
+    </ClCompile>
+    <ClCompile Include="Being_collide.cpp">
+      <Filter>Source Files\environment\Being</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +169,27 @@
     </ClInclude>
     <ClInclude Include="main_functions.hpp">
       <Filter>Header Files\main_functions</Filter>
+    </ClInclude>
+    <ClInclude Include="platforms.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Being.hpp">
+      <Filter>Header Files\environment\abstract\EntityDerivatives</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleBeing.hpp">
+      <Filter>Header Files\beings</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityType.hpp">
+      <Filter>Header Files\environment\enumerations</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleBeing_constants.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="theBeing.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="beings.hpp">
+      <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

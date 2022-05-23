@@ -2,15 +2,11 @@
 #include "Platform.hpp"
 
 
-
 extern const point examplePlatformDims;
 
 class ExamplePlatform : public Platform {
-private:
-	sf::RectangleShape shape;
 public:
-	ExamplePlatform(sf::RectangleShape shape_, point position);
-	void draw();
+	ExamplePlatform(sf::RectangleShape* shape_, point position);
 	void tick();
 	bool is_living();
 };
