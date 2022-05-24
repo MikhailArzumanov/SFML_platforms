@@ -10,7 +10,7 @@ void handleEvents() {
 			window->close();
 			break;
 		case sf::Event::KeyPressed:
-			for (auto being : beings)
+			for(auto being : beings)
 				being->onKeyPressed(theEvent.key.code);
 			break;
 		}

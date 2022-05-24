@@ -4,15 +4,24 @@
 const float windage = 12.f;
 const float gravityCoefficient = 3.f;
 const float frictionCoefficient = 12.f;
+const float speed = 3.f;
 
 void ExampleBeing::tick() {
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+		v.x = speed;
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+		v.x = -speed;
+	else v.x = 0;
+
 	a.y += gravityCoefficient;
 	v += a;
-	a = { 4 / 100.f,0.f };
+	a = { 0.f,0.f};
 	p += v;
 	std::cout << "dy = " << v.y << "\n";
 	v.y /= windage;
 
+	//...
 	//...
 
 	if (lastCollidable != nullptr) {
