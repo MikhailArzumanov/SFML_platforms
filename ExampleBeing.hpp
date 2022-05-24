@@ -2,6 +2,8 @@
 #include "Being.hpp"
 
 class ExampleBeing : public Being {
+private:
+	bool jumpFlag = false;
 public:
 	ExampleBeing(point position);
 	void tick();

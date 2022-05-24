@@ -16,10 +16,9 @@ void ExampleBeing::tick() {
 		v.x = -speed;
 	else v.x = 0;
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && cooldown == 0) {
-		v.y = -yforce; cooldown = 120;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !jumpFlag) {
+		v.y = -yforce; jumpFlag = true;
 	}
-	if(cooldown > 0) std::cout <<"cooldown: " <<cooldown-- <<"\n";
 
 	a.y += gravityCoefficient;
 	v += a;
@@ -29,6 +28,7 @@ void ExampleBeing::tick() {
 	//...
 	//...
 	if (lastCollidable != nullptr) {
+		jumpFlag = false;
 		float platformUpperY = lastCollidable->getP().y - lastCollidable->getDims().y / 2;
 		float beingLowerY = p.y + dims.y / 2;
 		if (beingLowerY > platformUpperY) {

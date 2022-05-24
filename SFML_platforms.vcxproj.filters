@@ -70,9 +70,6 @@
     <Filter Include="Source Files\beings\ExampleBeing">
       <UniqueIdentifier>{41f705da-903b-4031-b133-bd8de065a8f6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\platforms\ExamplePlatform\events">
-      <UniqueIdentifier>{81862c19-3943-4a5e-89c2-b26a39dbfa5f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
@@ -143,9 +140,6 @@
     </ClCompile>
     <ClCompile Include="theClock.cpp">
       <Filter>Source Files\environment\objects</Filter>
-    </ClCompile>
-    <ClCompile Include="ExampleBeing_onKeyPressed.cpp">
-      <Filter>Source Files\platforms\ExamplePlatform\events</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
