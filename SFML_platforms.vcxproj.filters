@@ -111,7 +111,7 @@
     <ClCompile Include="platforms.cpp">
       <Filter>Source Files\environment\objects</Filter>
     </ClCompile>
-    <ClCompile Include="Being_isCollidesWith.cpp">
+    <ClCompile Include="Being_isCollidingWith.cpp">
       <Filter>Source Files\environment\Being</Filter>
     </ClCompile>
     <ClCompile Include="Being_draw.cpp">
@@ -137,6 +137,9 @@
     </ClCompile>
     <ClCompile Include="Being_collide.cpp">
       <Filter>Source Files\environment\Being</Filter>
+    </ClCompile>
+    <ClCompile Include="theClock.cpp">
+      <Filter>Source Files\environment\objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +192,9 @@
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
     <ClInclude Include="beings.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="theClock.hpp">
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,12 +1,12 @@
 #pragma once
 #include "Entity.hpp"
-
 class Being : public Entity {
 protected:
+	Entity* lastCollidable = nullptr;
 	sf::Drawable* image;
 	Being(point position, point dims_, sf::Drawable* image_);
 public:
-	bool isCollidesWith(Entity* another);
+	bool isCollindingWith(Entity* another);
 	void collide(Entity* collidable);
 	virtual void draw();
 };

@@ -1,9 +1,9 @@
 #include "main_functions.hpp"
 #include "platforms.hpp"
 #include "beings.hpp"
+#include "theClock.hpp"
 
 #define in :
-int tickCounter = 0;
 
 void tick() {
 	for(auto platform in platforms)
@@ -11,17 +11,17 @@ void tick() {
 	for (auto being in beings) {
 		being->tick();
 		for (auto platform in platforms)
-			if (being->isCollidesWith(platform))
+			if (being->isCollindingWith(platform))
 				being->collide(platform);
-
 		for (auto another in beings)
-			if (being != another && being->isCollidesWith(another))
+			if (being != another && being->isCollindingWith(another))
 				being->collide(another);
 	}
-	tickCounter = 0;
 }
 
 void checkTick() {
-	if (tickCounter++ > 1000)
+	if (theClock.getElapsedTime().asSeconds() >= 1 / 60.f) {
+		theClock.restart();
 		tick();
+	}
 }
