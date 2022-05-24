@@ -8,7 +8,7 @@ bool Being::isCollindingWith(Entity* another) {
 	case anExamplePlatform:
 		point dist = another->getP() - p;
 		point sumDimsByTwo = (another->getDims() + dims)/2;
-		if (dist.x < sumDimsByTwo.x && dist.y < sumDimsByTwo.y)
+		if (abs(dist.x) < sumDimsByTwo.x && abs(dist.y) < sumDimsByTwo.y)
 			return true;
 	}
 
