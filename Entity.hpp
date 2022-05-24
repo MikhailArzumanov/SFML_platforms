@@ -18,4 +18,6 @@ public:
 	point getP(){return p;}
 	point getDims(){return dims;}
 	EntityType getType(){return type;}
+
+	virtual void onKeyPressed(sf::Keyboard::Key key) {};
 };
