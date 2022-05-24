@@ -1,6 +1,6 @@
 #include "ExampleBeing.hpp"
 
-const float speed = 12.f;
+const float speed = 2.3f;
 
 void ExampleBeing::onKeyPressed(sf::Keyboard::Key key) {
 	switch (key) {
