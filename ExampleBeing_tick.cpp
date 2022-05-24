@@ -1,10 +1,12 @@
 #include "ExampleBeing.hpp"
 #include <iostream>
 
-const float windage = 12.f;
 const float gravityCoefficient = 0.12f;
 const float frictionCoefficient = 12.f;
 const float speed = 3.f;
+const float yforce = 0.2856f; 
+int cooldown = 0;
+
 
 void ExampleBeing::tick() {
 
@@ -14,15 +16,18 @@ void ExampleBeing::tick() {
 		v.x = -speed;
 	else v.x = 0;
 
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && cooldown == 0) {
+		v.y = -yforce; cooldown = 120;
+	}
+	if(cooldown > 0) cooldown--;
+
 	a.y += gravityCoefficient;
 	v += a;
 	a = { 0.f,0.f};
 	p += v;
 	std::cout << "dy = " << v.y << "\n";
-
 	//...
 	//...
-
 	if (lastCollidable != nullptr) {
 		float platformUpperY = lastCollidable->getP().y - lastCollidable->getDims().y / 2;
 		float beingLowerY = p.y + dims.y / 2;
