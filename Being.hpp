@@ -1,10 +1,12 @@
 #pragma once
 #include "Entity.hpp"
+#include "Platform.hpp"
 #include <SFML/Window/Keyboard.hpp>
+
 class Being : public Entity {
 
 protected:
-	Entity* lastCollidable = nullptr;
+	Platform* lastReliance = nullptr;
 	sf::Drawable* image;
 	Being(point position, point dims_, sf::Drawable* image_);
 

@@ -27,15 +27,15 @@ void ExampleBeing::tick() {
 	//std::cout << "dy = " << v.y << "\n";
 	//...
 	//...
-	if (lastCollidable != nullptr) {
+	if (lastReliance != nullptr) {
 		jumpFlag = false;
-		float platformUpperY = lastCollidable->getP().y - lastCollidable->getDims().y / 2;
+		float platformUpperY = lastReliance->getP().y - lastReliance->getDims().y / 2;
 		float beingLowerY = p.y + dims.y / 2;
 		if (beingLowerY > platformUpperY) {
 			p.y = platformUpperY - dims.y / 2 + 0.12f;
 			v.y = v.y < 0 ? v.y : 0;
 			v.x /= frictionCoefficient;
 		}
-		lastCollidable = nullptr;
+		lastReliance = nullptr;
 	}
 }
