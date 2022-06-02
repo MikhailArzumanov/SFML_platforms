@@ -4,7 +4,7 @@
 #include "Ticking.hpp"
 #include "point.hpp"
 #include "EntityType.hpp"
-
+#include <SFML/Window/Keyboard.hpp>
 
 
 class Entity : public Drawable, public Living, public Ticking {
