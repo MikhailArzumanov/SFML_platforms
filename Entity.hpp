@@ -4,7 +4,7 @@
 #include "Ticking.hpp"
 #include "point.hpp"
 #include "EntityType.hpp"
-
+#include <SFML/Window/Keyboard.hpp>
 
 
 class Entity : public Drawable, public Living, public Ticking {
@@ -18,4 +18,6 @@ public:
 	point getP(){return p;}
 	point getDims(){return dims;}
 	EntityType getType(){return type;}
+
+	virtual void onKeyPressed(sf::Keyboard::Key key) {};
 };

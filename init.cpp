@@ -18,6 +18,7 @@ void init() {
 	exampleRectangle->setFillColor(examplePlatformColor);
 	platform = new ExamplePlatform(exampleRectangle, { 100.f, 200.f });
 	platforms.push_back(platform);
+	platforms.push_back(new ExamplePlatform(exampleRectangle, { 200.f, 100.f }));
 	exampleBeing = new ExampleBeing({40.f, 40.f});
 	beings.push_back(exampleBeing);
 }
