@@ -156,6 +156,7 @@
     <ClCompile Include="ExampleBeing_constants.cpp" />
     <ClCompile Include="ExampleBeing_constructor.cpp" />
     <ClCompile Include="ExampleBeing_draw.cpp" />
+    <ClCompile Include="ExampleBeing_onKeyPressed.cpp" />
     <ClCompile Include="ExampleBeing_tick.cpp" />
     <ClCompile Include="ExamplePlatform_constructors.cpp" />
     <ClCompile Include="ExamplePlatform_is_living.cpp" />
