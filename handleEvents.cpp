@@ -26,6 +26,10 @@ void handleEvents() {
 			break;
 		case sf::Event::JoystickButtonPressed:
 			for (auto being : beings) being->onJoystickButtonPressed(theEvent.joystickButton);
+			break;
+		case sf::Event::JoystickButtonReleased:
+			for (auto being : beings) being->onJoystickButtonReleased(theEvent.joystickButton);
+			break;
 		}
 	}
 }

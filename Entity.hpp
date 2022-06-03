@@ -5,7 +5,7 @@
 #include "point.hpp"
 #include "EntityType.hpp"
 #include <SFML/Window/Keyboard.hpp>
-
+#include <SFML/Window/Event.hpp>
 
 class Entity : public Drawable, public Living, public Ticking {
 protected:
@@ -24,6 +24,7 @@ public:
 	virtual void onMouseButtonPressed(sf::Event::MouseButtonEvent theEvent) {}
 	virtual void onMouseButtonReleased(sf::Event::MouseButtonEvent theEvent) {}
 	virtual void onMouseMoved(sf::Event::MouseMoveEvent theEvent) {}
-	virtual void onJoystickButtonPressed(sf::Event::JoystickButtonEvent theEvent){}
+	virtual void onJoystickButtonPressed(sf::Event::JoystickButtonEvent theEvent) {}
+	virtual void onJoystickButtonReleased(sf::Event::JoystickButtonEvent theEvent) {}
 
 };
