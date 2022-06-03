@@ -24,6 +24,8 @@ void handleEvents() {
 		case sf::Event::MouseMoved:
 			for (auto being : beings) being->onMouseMoved(theEvent.mouseMove);
 			break;
+		case sf::Event::JoystickButtonPressed:
+			for (auto being : beings) being->onJoystickButtonPressed(theEvent.joystickButton);
 		}
 	}
 }

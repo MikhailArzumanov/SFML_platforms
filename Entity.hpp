@@ -24,5 +24,6 @@ public:
 	virtual void onMouseButtonPressed(sf::Event::MouseButtonEvent theEvent) {}
 	virtual void onMouseButtonReleased(sf::Event::MouseButtonEvent theEvent) {}
 	virtual void onMouseMoved(sf::Event::MouseMoveEvent theEvent) {}
+	virtual void onJoystickButtonPressed(sf::Event::JoystickButtonEvent theEvent){}
 
 };
