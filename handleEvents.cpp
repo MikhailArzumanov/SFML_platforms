@@ -1,7 +1,7 @@
 #include "SFML/Window/Event.hpp"
 #include "main_functions.hpp"
 #include "window.hpp"
-#include "beings.hpp"
+#include "eventables.hpp"
 void handleEvents() {
 	sf::Event theEvent;
 	while (window->pollEvent(theEvent)) {
@@ -10,25 +10,25 @@ void handleEvents() {
 			window->close();
 			break;
 		case sf::Event::KeyPressed:
-			for(auto being : beings) being->onKeyPressed(theEvent.key.code);
+			for(auto being : eventables) being->onKeyPressed(theEvent.key.code);
 			break;
 		case sf::Event::KeyReleased:
-			for (auto being : beings) being->onKeyReleased(theEvent.key.code);
+			for (auto being : eventables) being->onKeyReleased(theEvent.key.code);
 			break;
 		case sf::Event::MouseButtonPressed:
-			for (auto being : beings) being->onMouseButtonPressed(theEvent.mouseButton);
+			for (auto being : eventables) being->onMouseButtonPressed(theEvent.mouseButton);
 			break;
 		case sf::Event::MouseButtonReleased:
-			for (auto being : beings) being->onMouseButtonReleased(theEvent.mouseButton);
+			for (auto being : eventables) being->onMouseButtonReleased(theEvent.mouseButton);
 			break;
 		case sf::Event::MouseMoved:
-			for (auto being : beings) being->onMouseMoved(theEvent.mouseMove);
+			for (auto being : eventables) being->onMouseMoved(theEvent.mouseMove);
 			break;
 		case sf::Event::JoystickButtonPressed:
-			for (auto being : beings) being->onJoystickButtonPressed(theEvent.joystickButton);
+			for (auto being : eventables) being->onJoystickButtonPressed(theEvent.joystickButton);
 			break;
 		case sf::Event::JoystickButtonReleased:
-			for (auto being : beings) being->onJoystickButtonReleased(theEvent.joystickButton);
+			for (auto being : eventables) being->onJoystickButtonReleased(theEvent.joystickButton);
 			break;
 		}
 	}

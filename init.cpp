@@ -6,7 +6,9 @@
 #include "theBeing.hpp"
 #include "beings.hpp"
 #include "theEventPlatform.hpp"
+#include "eventables.hpp"
 
+std::list<Eventable*> eventables;
 EventPlatform* theEventPlatform = nullptr;
 sf::RenderWindow* window = nullptr;
 ExamplePlatform* platform = nullptr;
@@ -14,6 +16,7 @@ ExampleBeing* exampleBeing = nullptr;
 const sf::Color examplePlatformColor = sf::Color(0x70, 0x70, 0x70);
 sf::RectangleShape* exampleRectangle = new sf::RectangleShape(examplePlatformDims);
 sf::RectangleShape* eventRectangle = new sf::RectangleShape(eventPlatformDims);
+
 
 void init() {
 	window = new sf::RenderWindow(sf::VideoMode(700, 313), "Debug window");
@@ -27,4 +30,5 @@ void init() {
 	beings.push_back(exampleBeing);
 	theEventPlatform = new EventPlatform(eventRectangle, { 230.f, 200.f });
 	platforms.push_back(theEventPlatform);
+	eventables.push_back(theEventPlatform);
 }
