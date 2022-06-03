@@ -10,16 +10,16 @@ void handleEvents() {
 			window->close();
 			break;
 		case sf::Event::KeyPressed:
-			for(auto being : beings)
-				being->onKeyPressed(theEvent.key.code);
+			for(auto being : beings) being->onKeyPressed(theEvent.key.code);
 			break;
 		case sf::Event::KeyReleased:
-			for (auto being : beings)
-				being->onKeyReleased(theEvent.key.code);
+			for (auto being : beings) being->onKeyReleased(theEvent.key.code);
 			break;
 		case sf::Event::MouseButtonPressed:
-			for (auto being : beings)
-				being->onMouseButtonPressed(theEvent.mouseButton);
+			for (auto being : beings) being->onMouseButtonPressed(theEvent.mouseButton);
+			break;
+		case sf::Event::MouseButtonReleased:
+			for (auto being : beings) being->onMouseButtonReleased(theEvent.mouseButton);
 			break;
 		}
 	}
