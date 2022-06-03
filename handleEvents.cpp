@@ -13,6 +13,10 @@ void handleEvents() {
 			for(auto being : beings)
 				being->onKeyPressed(theEvent.key.code);
 			break;
+		case sf::Event::KeyReleased:
+			for (auto being : beings)
+				being->onKeyReleased(theEvent.key.code);
+			break;
 		}
 	}
 }
