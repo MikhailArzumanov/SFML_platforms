@@ -23,5 +23,6 @@ public:
 	virtual void onKeyReleased(sf::Keyboard::Key key) {}
 	virtual void onMouseButtonPressed(sf::Event::MouseButtonEvent theEvent) {}
 	virtual void onMouseButtonReleased(sf::Event::MouseButtonEvent theEvent) {}
+	virtual void onMouseMoved(sf::Event::MouseMoveEvent theEvent) {}
 
 };

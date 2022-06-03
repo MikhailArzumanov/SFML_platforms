@@ -21,6 +21,9 @@ void handleEvents() {
 		case sf::Event::MouseButtonReleased:
 			for (auto being : beings) being->onMouseButtonReleased(theEvent.mouseButton);
 			break;
+		case sf::Event::MouseMoved:
+			for (auto being : beings) being->onMouseMoved(theEvent.mouseMove);
+			break;
 		}
 	}
 }
