@@ -17,6 +17,10 @@ void handleEvents() {
 			for (auto being : beings)
 				being->onKeyReleased(theEvent.key.code);
 			break;
+		case sf::Event::MouseButtonPressed:
+			for (auto being : beings)
+				being->onMouseButtonPressed(theEvent.mouseButton);
+			break;
 		}
 	}
 }
