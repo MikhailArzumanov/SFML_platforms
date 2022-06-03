@@ -176,6 +176,7 @@
     <ClInclude Include="Drawable.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="EntityType.hpp" />
+    <ClInclude Include="Eventable.hpp" />
     <ClInclude Include="EventPlatform.hpp" />
     <ClInclude Include="ExampleBeing.hpp" />
     <ClInclude Include="ExampleBeing_constants.hpp" />

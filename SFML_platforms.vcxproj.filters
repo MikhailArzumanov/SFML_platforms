@@ -215,5 +215,8 @@
     <ClInclude Include="theEventPlatform.hpp">
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
+    <ClInclude Include="Eventable.hpp">
+      <Filter>Header Files\environment\interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
