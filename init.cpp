@@ -31,6 +31,12 @@ void init() {
 	platforms.push_back(theEventPlatform);
 	platforms.push_back(new ExamplePlatform(exampleRectangle, { 200.f, 100.f }));
 
+	theEventPlatform = new EventPlatform(eventRectangle, { 540.f, 200.f });
+
+	platforms.push_back(platform);
+	platforms.push_back(theEventPlatform);
+	platforms.push_back(new ExamplePlatform(exampleRectangle, { 200.f, 100.f }));
+
 	exampleBeing = new ExampleBeing({40.f, 40.f});
 	beings.push_back(exampleBeing);
 
