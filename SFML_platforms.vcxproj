@@ -150,9 +150,13 @@
     <ClCompile Include="Being_isCollidingWith.cpp" />
     <ClCompile Include="cycle.cpp" />
     <ClCompile Include="draw.cpp" />
+    <ClCompile Include="EventPlatform_constructor.cpp" />
+    <ClCompile Include="EventPlatform_onKeyPressed.cpp" />
+    <ClCompile Include="EventPlatform_tick.cpp" />
     <ClCompile Include="ExampleBeing_constants.cpp" />
     <ClCompile Include="ExampleBeing_constructor.cpp" />
     <ClCompile Include="ExampleBeing_draw.cpp" />
+    <ClCompile Include="ExampleBeing_onKeyPressed.cpp" />
     <ClCompile Include="ExampleBeing_tick.cpp" />
     <ClCompile Include="ExamplePlatform_constructors.cpp" />
     <ClCompile Include="ExamplePlatform_is_living.cpp" />
@@ -173,6 +177,9 @@
     <ClInclude Include="Drawable.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="EntityType.hpp" />
+    <ClInclude Include="Eventable.hpp" />
+    <ClInclude Include="eventables.hpp" />
+    <ClInclude Include="EventPlatform.hpp" />
     <ClInclude Include="ExampleBeing.hpp" />
     <ClInclude Include="ExampleBeing_constants.hpp" />
     <ClInclude Include="ExamplePlatform.hpp" />
@@ -183,6 +190,7 @@
     <ClInclude Include="point.hpp" />
     <ClInclude Include="theBeing.hpp" />
     <ClInclude Include="theClock.hpp" />
+    <ClInclude Include="theEventPlatform.hpp" />
     <ClInclude Include="thePlatform.hpp" />
     <ClInclude Include="Ticking.hpp" />
     <ClInclude Include="window.hpp" />

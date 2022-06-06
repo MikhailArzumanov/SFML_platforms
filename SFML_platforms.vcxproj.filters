@@ -70,6 +70,9 @@
     <Filter Include="Source Files\beings\ExampleBeing">
       <UniqueIdentifier>{41f705da-903b-4031-b133-bd8de065a8f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\platforms\EventPlatform">
+      <UniqueIdentifier>{14ed89a6-8c00-444b-bcca-2aedb7708004}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SFML_platforms.cpp">
@@ -141,6 +144,18 @@
     <ClCompile Include="theClock.cpp">
       <Filter>Source Files\environment\objects</Filter>
     </ClCompile>
+    <ClCompile Include="EventPlatform_constructor.cpp">
+      <Filter>Source Files\platforms\EventPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPlatform_tick.cpp">
+      <Filter>Source Files\platforms\EventPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPlatform_onKeyPressed.cpp">
+      <Filter>Source Files\platforms\EventPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleBeing_onKeyPressed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="point.hpp">
@@ -195,6 +210,18 @@
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
     <ClInclude Include="theClock.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPlatform.hpp">
+      <Filter>Header Files\platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="theEventPlatform.hpp">
+      <Filter>Header Files\environment\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Eventable.hpp">
+      <Filter>Header Files\environment\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="eventables.hpp">
       <Filter>Header Files\environment\objects</Filter>
     </ClInclude>
   </ItemGroup>
